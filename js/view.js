@@ -102,6 +102,9 @@
         		return false;
 			}
 
+			//hack fakepath
+			data.picture = data.picture.replace(/^.*\\/, "");
+
 			// item valid
 			// create the custom event
 			var customEvent = new CustomEvent("finishNewForm", {
@@ -154,6 +157,9 @@
 				// Invalid item not picture
         		data.picture = item.picture; 
 			}
+
+			//hack fakepath
+			data.picture = data.picture.replace(/^.*\\/, "");
 
 			// item valid
 			// create the custom event
