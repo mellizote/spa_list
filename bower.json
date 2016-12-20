@@ -1,0 +1,8 @@
+{
+  "name": "spa-list",
+  "private": true,
+  "dependencies": {
+    "basicModal": "^3.3.8",
+    "Sortable": "sortablejs#^1.4.2"
+  }
+}

@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font: 14px Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	background: #f5f5f5;
+	color: #4d4d4d;
+	max-width: 757px;
+	margin: 0 auto;
+	font-weight: 300;
+}
+
+.spalistapp {
+	background: #fff;
+	margin: 70px 0px 0px 0px;
+	position: relative;
+}
+
+.spalistapp h1 {
+    font-size: 22px;
+    font-weight: 100;
+    position: absolute;
+    text-align: center;
+    top: -49px;
+    width: 100%;
+}
+
+.main {
+	position: relative;
+	z-index: 2;
+	border-top: 1px solid #e6e6e6;
+}
+
+.spa-list {
+	margin: 0;
+	padding: 0;
+	list-style: outside none none;
+}
+
+.spa-list li {
+	position: relative;
+	font-size: 18px;
+	border-bottom: 1px solid #ededed;
+}
+
+.spa-list li:last-child {
+	border-bottom: none;
+}
+
+.spa-list li img {
+    margin: 10px;
+}
+
+.spa-list li label {
+	position: relative;
+    top: -19px;
+}
+
+
+.spa-list li .destroy {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	bottom: 0;
+	width: 40px;
+	height: 40px;
+	margin: auto 0;
+	font-size: 14px;
+	margin-bottom: 11px;
+	transition: color 0.2s ease-out;
+}
+
+.spa-list li .destroy:hover {
+}
+
+.spa-list li .destroy:after {
+	content: 'Delete';
+}
+
+.spa-list li:hover .destroy {
+	display: block;
+	cursor: pointer;
+}
+
+.spa-list li .edit {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 80px;
+	bottom: 0;
+	width: 40px;
+	height: 40px;
+	margin: auto 0;
+	font-size: 14px;
+	margin-bottom: 11px;
+	transition: color 0.2s ease-out;
+}
+
+.spa-list li .edit:hover {
+}
+
+.spa-list li .edit:after {
+	content: 'Edit';
+}
+
+.spa-list li:hover .edit {
+	display: block;
+	cursor: pointer;
+}
+
+.spa-list li .drag-handle {
+    color: gray;
+    cursor: move;
+    display: inline-block;
+    font: bold 19px sans-serif;
+    margin: 0 14px;
+    position: relative;
+    top: -19px;
+}
+
+.footer {
+	color: #777;
+	padding: 10px 15px;
+	height: 40px;
+	text-align: center;
+	border-top: 1px solid #e6e6e6;
+}
+
+.spa-list-count {
+	float: left;
+	text-align: left;
+}
+
+.spa-list-count strong {
+	font-weight: 300;
+}
+
+.basicModal p.help {
+    font-size: 10px;
+    text-align: left;
+}
+
+button { 
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 0 none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+button.new-item {
+    background-color: white;
+    border: 1px solid;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: -35px;
+    cursor: pointer;
+}
