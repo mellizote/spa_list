@@ -1,0 +1,4 @@
+vendors
+js/vendors
+.tmp
+*.sw*
